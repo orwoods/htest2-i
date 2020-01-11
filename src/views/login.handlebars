@@ -1,0 +1,33 @@
+<div class="ui text container" style="margin-top: 20px;">
+  <div class="ui middle aligned center aligned grid">
+    <div class="column">
+      <h2 class="ui teal image header">
+        <div class="content">
+          Test API
+        </div>
+      </h2>
+
+      {{#if error}}
+      <div class="ui error message">{{ error }}</div>
+      {{/if}}
+
+      <form class="ui large form" action="" method="post">
+        <div class="ui segment">
+          <div class="field">
+            <div class="ui left icon input">
+              <i class="user icon"></i>
+              <input type="text" name="username" placeholder="Username">
+            </div>
+          </div>
+          <div class="field">
+            <div class="ui left icon input">
+              <i class="lock icon"></i>
+              <input type="password" name="password" placeholder="Password">
+            </div>
+          </div>
+          <button class="ui fluid large teal submit button">Login</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

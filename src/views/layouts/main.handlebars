@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Test API</title>
+    <link rel="stylesheet" type="text/css" href="/semantic/semantic.min.css">
+    <script
+      src="https://code.jquery.com/jquery-3.1.1.min.js"
+      integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+      crossorigin="anonymous"></script>
+    <script src="/semantic/semantic.min.js"></script>
+</head>
+<body>
+{{#if logged}}
+<div class="ui secondary pointing menu">
+  <a class="active item" href="/">
+    Матчи
+  </a>
+  <div class="right menu">
+    <a class="ui item" href="/logout">
+      Выход
+    </a>
+  </div>
+</div>
+{{/if}}
+
+{{{body}}}
+</body>
+</html>
